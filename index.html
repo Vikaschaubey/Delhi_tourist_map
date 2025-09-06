@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Delhi Tourist Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Mappls SDK -->
+  <script src="https://apis.mappls.com/advancedmaps/api/d8d7172a111ef3e363787dafa39dc89d/map_sdk?layer=vector&v=3.0&callback=initMap" defer async></script>
+</head>
+
+<body>
+  <header>
+    <h1>Delhi Tourist Places Map</h1>
+    <p>Find and explore the top tourist attractions in Delhi</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="placeSelect">Choose a place:</label>
+      <select id="placeSelect" onchange="showMarker()">
+        <option value="">-- Select a Place --</option>
+        <option value="28.6129,77.2295,1t182a">India Gate</option>
+        <option value="28.6559,77.2387,t5sc76">Red Fort (Lal Qila)</option>
+        <option value="28.5244,77.1855,n6oqyb">Qutub Minar</option>
+        <option value="28.5535,77.2588,jq5qn8">Lotus Temple</option>
+        <option value="28.705397,77.234026,to9e3o">Signature Bridge</option>
+        <option value="28.789717,77.14411,qpxogm">Shree Khatu Shyam Mandir</option>
+        <option value="28.63275,77.19887, 614tt8">Laxmi Narayan Mandir</option>
+        <option value="28.662207,77.237803,3i6093">Marghat wale Baba</option>
+        <option value="28.603807,77.198183,8d5d11">Nehru Planetarium</option>
+        <option value="28.724691,77.115717,226t76">Adventure Island</option>
+        <option value="28.5933,77.2507,dce74d">Humayun’s Tomb</option>
+        <option value="28.6507,77.2334,6tf6b8">Jama Masjid</option>
+        <option value="28.6143,77.1995,co8jlf">Rashtrapati Bhavan</option>
+        <option value="28.6271,77.2167,aee6ad">Jantar Mantar</option>
+        <option value="28.6127,77.2773,6r6d8n">Akshardham Temple</option>
+        <option value="28.6564,77.2303,voqsl9">Chandni Chowk</option>
+        <option value="28.6406,77.2495,af82s1">Raj Ghat</option>
+        <option value="28.6118,77.2192,b78a63">National Museum</option>
+        <option value="28.6264,77.2091,kk5gbq">Gurudwara Bangla Sahib</option>
+        <option value="28.5536,77.1936,ppz6sk">Hauz Khas Village</option>
+        <option value="28.5933,77.2197,ab144t">Lodi Gardens</option>
+        <option value="28.6315,77.2167,V66B2L">Connaught Place</option>
+        <option value="28.5559,77.2538,ggfoj3">ISKCON Temple</option>
+        <option value="28.5893,77.2105,BECC5S">Safdarjung Tomb</option>
+      </select>
+      <button id="toggleRotationBtn" onclick="toggleRotation()">⏸ Pause Rotation</button>
+      <div id="result"></div>
+    </section>
+
+    <section class="map-container">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Delhi Tourism | Powered by Vikash</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
