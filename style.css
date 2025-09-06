@@ -1,0 +1,100 @@
+/* Reset & Basics */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  height: 100%;
+}
+
+/* Header */
+header {
+  background: #004d66;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+/* Controls Section */
+.controls {
+  text-align: center;
+  margin: 20px auto;
+}
+.controls label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.controls select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#toggleRotationBtn {
+  background-color: #0078d7;   /* Primary blue */
+  color: #fff;                 /* White text */
+  border: none;                /* Remove default border */
+  padding: 10px 0;             /* Vertical padding only */
+  width: 180px;                /* Fixed width */
+  text-align: center;          /* Center text */
+  font-size: 15px;             /* Text size */
+  font-weight: 600;            /* Bold text */
+  border-radius: 8px;          /* Rounded corners */
+  cursor: pointer;             /* Pointer on hover */
+  transition: all 0.3s ease;   /* Smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Subtle shadow */
+  white-space: nowrap;         /* Prevent text wrapping */
+}
+
+#toggleRotationBtn:hover {
+  background-color: #005fa3;   /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+#toggleRotationBtn:active {
+  background-color: #004578;   /* Even darker when pressed */
+  transform: translateY(0);    /* Reset lift */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+  
+
+#result {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #006699;
+}
+
+/* Map Section */
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+#map {
+  width: 80%;
+  height: 65vh;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d66;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
